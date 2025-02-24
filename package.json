@@ -1,0 +1,22 @@
+{
+  "name": "mongobd-docker",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "dev": "tsnd --respawn --clear src/app.ts",
+    "build": "rimraf ./dist && tsc",
+    "start": "npm run build && node dist/app.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "@types/node": "^22.13.5",
+    "typescript": "^5.7.3",
+    "rimraf": "^5.0.5"
+  },
+  "dependencies": {
+    "mongoose": "^8.10.1"
+  }
+}
